@@ -30,6 +30,9 @@ The project focuses on sales performance, customer insights, product profitabili
 - 17.71M Total Revenue Analyzed
 ---
 
+## ER Diagram
+<img width="556" height="687" alt="Screenshot 2026-05-30 at 9 54 29 PM" src="https://github.com/user-attachments/assets/47334ed6-9121-472f-b411-2caa23014dd0" />
+
 ## Project Workflow
 
 ### 1. Data Warehousing
