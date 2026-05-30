@@ -19,7 +19,15 @@ The project focuses on sales performance, customer insights, product profitabili
 - Snowflake Cloud Data Warehouse
 - SQL
 - Power BI
+---
 
+## Project Statistics
+
+- 8 Snowflake Tables
+- 2 Analytical Views
+- 2 Stored Procedures
+- 2 Power BI Dashboards
+- 17.71M Total Revenue Analyzed
 ---
 
 ## Project Workflow
