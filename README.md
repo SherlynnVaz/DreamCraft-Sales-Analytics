@@ -19,7 +19,6 @@ The project focuses on sales performance, customer insights, product profitabili
 - Snowflake Cloud Data Warehouse
 - SQL
 - Power BI
-- GitHub
 
 ---
 
