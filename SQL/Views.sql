@@ -1,0 +1,41 @@
+CREATE OR REPLACE PROCEDURE GET_MARKUP_HIGHER(number_1 INTEGER)
+RETURNS INTEGER NOT NULL
+LANGUAGE SQL
+AS
+$$
+DECLARE
+    markup_count INTEGER;
+BEGIN
+
+    SELECT COUNT(*) INTO markup_count
+    FROM SALES.DREAMCRAFT.`PRODUCTS`
+    WHERE `MARKUP_PERCENTAGE` > :number_1;
+
+    RETURN markup_count;
+
+END;
+$$;
+
+
+CREATE OR REPLACE PROCEDURE GET_HIGHCREDIT_CUSTOMER(cl NUMBER)
+RETURNS TABLE(customerName VARCHAR(50), credit FLOAT)
+LANGUAGE SQL
+AS
+$$
+DECLARE
+    v_results RESULTSET;
+BEGIN
+
+    v_results := (
+        SELECT
+            `CUSTOMERNAME` AS customerName,
+            `CREDITLIMIT` AS credit
+        FROM SALES.DREAMCRAFT.`CUSTOMERS`
+        WHERE `CREDITLIMIT` > :cl
+    );
+
+    RETURN TABLE(v_results);
+
+END;
+$$;
+ 
